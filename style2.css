@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply{
+    max-width: 650px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 5px 5px 4px aquamarine;
+    border-radius: 10px;
+}
+
+.apply h1{
+    font-size: 50px;
+}
+
+.title_web{
+    font-size: 20px;
+}
+
+.cont{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+input, select, textarea{
+    padding: 6px 10px;
+    border: 2px solid rgb(46, 1, 1);
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline-color: red;
+    outline-style: dashed;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: goldenrod;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.5s ease-in;
+}
+
+button:hover{
+    background-color: greenyellow;
+    border: 2px solid red;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+#addr{
+    grid-column: 1 / span 2;
+}
+
+@media (max-width:460px){
+    #addr{
+        grid-column: 1 / span 1;
+    }
+}
